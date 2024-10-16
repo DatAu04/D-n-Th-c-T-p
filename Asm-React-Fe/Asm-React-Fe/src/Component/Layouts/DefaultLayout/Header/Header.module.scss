@@ -1,0 +1,123 @@
+.header {
+    display: flex;
+    height: 50px;
+    // background-color: #4caf50;
+    justify-content: space-between;
+    border-bottom: 3px solid #ebedee;
+    padding: 10px;
+}
+
+// headerSearch // bên trái
+.headerSearch {
+    display: flex;
+    align-items: flex-start;
+    line-height: 50px;
+    padding-left: 10px;
+}
+
+.searchContainer {
+    position: relative;
+    width: 300px;
+}
+
+.searchInput {
+    background-color: #ebedee;
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    font-size: 14px;
+    border: 2px solid #ebedee;
+    border-radius: 30px;
+    box-sizing: border-box;
+    outline: none;
+
+    &:focus {
+        border-color: darken(#ebedee, 10%);
+    }
+}
+
+.searchIcon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+//// headerRight // bên phải
+
+.headerRight {
+    display: flex;
+    padding-right: 20px;
+    line-height: 50px;
+    .notification {
+        margin-right: 20px;
+
+        .notificationIcon {
+            font-size: 20px;
+            border: 3px solid #e3e5e6;
+            border-radius: 90%;
+            padding: 10px;
+        }
+    }
+
+    .user {
+        display: flex;
+        // margin-right: 10px;
+        img {
+            margin: auto;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+        }
+        .userIcon {
+            padding: 0px 5px;
+            margin: auto;
+            display: flex;
+            list-style-type: none;
+            li {
+                height: 62px;
+                list-style-type: none;
+                position: relative;
+                line-height: 3.3;
+                display: block;
+                // display: inline-block;
+                &:hover .userAccount {
+                    display: block;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+                .userAccount {
+                    display: none;
+                    min-width: 120px;
+                    position: absolute;
+                    background-color: #fff;
+                    top: 62px;
+                    right: 0;
+                    // left: 0;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    z-index: 1;
+                    li {
+                        border-bottom: 1px solid #e3e5e6;
+                        line-height: 40px;
+                        height: 40px;
+                        padding: 0px 15px;
+
+                        &:hover {
+                            background-color: #ebedee;
+                        }
+                        .userLogout {
+                            color: red;
+                            font-weight: bold;
+                            cursor: pointer;
+                            .userIconlogout {
+                                padding: 0 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

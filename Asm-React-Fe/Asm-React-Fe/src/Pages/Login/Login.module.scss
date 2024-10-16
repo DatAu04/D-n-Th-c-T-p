@@ -1,0 +1,101 @@
+// html, body {
+//     height: 100%;
+//     margin: 0;
+//     background-image: linear-gradient(#03a9f4, #81d4fa);
+// }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(#03a9f4, #aedf91);
+}
+
+.login {
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+        font-size: 2rem;
+        font-weight:bolder;
+        letter-spacing: 1.5px;
+        border-bottom: 2px solid #03a9f4;
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    label {
+        color: #333;
+        font-size: 0.9rem;
+        font-weight: bold;
+        align-self: flex-start;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        box-sizing: border-box;
+
+        &::placeholder {
+            color: #aaa;
+        }
+
+        &:focus {
+            border-color: #03a9f4;
+            box-shadow: 0 0 5px rgba(3, 169, 244, 0.5);
+        }
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #29b6f6;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        outline: none;
+        transition: background-color 0.3s, box-shadow 0.3s;
+
+        &:hover {
+            background-color: #0288d1;
+            box-shadow: 0 0 10px rgba(2, 136, 209, 0.5);
+        }
+    }
+
+    a {
+        color: #03a9f4;
+        text-decoration: none;
+        margin-top: 10px;
+        font-size: 0.9rem;
+
+        &:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+    }
+
+    p {
+        margin-top: 20px;
+        color: #333;
+        font-size: 0.9rem;
+    }
+}

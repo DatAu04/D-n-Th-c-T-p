@@ -1,0 +1,32 @@
+.logo {
+    height: 50px;
+    border-bottom: 3px solid #ebedee;
+    padding-bottom: 10px;
+    display: flex;
+    width: 100%;
+    .logoImage {
+        padding: 0 10px;
+        align-items: center;
+        display: flex;
+        float: left;
+        width: 80%;
+        p {
+            margin-left: 10px;
+            line-height: 50px;
+        }
+        img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+    .logoIcon {
+        display: flex;
+        float: right;
+        width: 20%;
+        line-height: 50px;
+    
+    }
+    li {
+        list-style-type: none;
+    }
+}
